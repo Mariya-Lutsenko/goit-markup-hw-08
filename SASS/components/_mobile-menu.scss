@@ -19,10 +19,12 @@
 }
 
 .mobile-menu__container {
+    
     position: relative;
     padding-left: 25px;
     padding-top: 48px;
     padding-bottom: 48px;
+    
 }
 
 .mobile-menu__close-btn {
@@ -47,8 +49,13 @@
 fill: currentColor;
 }
 
+// .mobile-menu-content {
+// display: flex;
+//         flex-direction: column;
+        
+// }
 .mobile-menu-nav {
-    margin-bottom: 306px;
+    // margin-bottom: 306px;
 }
 
 .mobile-menu-nav__item:not(:last-child) {
@@ -69,6 +76,9 @@ fill: currentColor;
                 color: var(--accent-color);
             }
 }
+// .mobile-menu-contsoc {
+//     margin-top: auto;
+// }
 .mobile-menu-contact {
     margin-bottom: 64px;
 }
