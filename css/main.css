@@ -133,8 +133,8 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: var(--primary-white-color);
   top: 50%;
@@ -143,12 +143,18 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .modal-button-close {
   position: absolute;
   cursor: pointer;
-  top: 14px;
-  right: 14px;
+  top: 8px;
+  right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,12 +284,19 @@ img {
 .modal-form-check-label {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-check-label {
+    font-size: 14px;
+    line-height: 1.71;
+    justify-content: center;
+  }
 }
 
 .check-link {
@@ -927,6 +940,11 @@ img {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .clients-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .clients-list__item:not(:nth-last-child(-n+2)) {
     margin-bottom: 30px;
