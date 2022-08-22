@@ -78,11 +78,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     text-transform: uppercase;
 
     @media screen and (min-width: 1200px) {
-        width: 696px;
+        max-width: 696px;
         font-size: 44px;
         line-height: 1.36;
     }
 }
+
 
 .hero__button {
     display: inline-block;
