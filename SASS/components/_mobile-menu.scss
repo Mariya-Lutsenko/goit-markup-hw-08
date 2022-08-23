@@ -76,9 +76,10 @@ fill: currentColor;
                 color: var(--accent-color);
             }
 }
-// .mobile-menu-contsoc {
-//     margin-top: auto;
-// }
+.mobile-menu-nav__link.current {
+    color: var(--accent-color);
+}
+
 .mobile-menu-contact {
     margin-bottom: 64px;
 }
@@ -92,6 +93,9 @@ fill: currentColor;
         letter-spacing: 0.02em;
         color: var(--accent-color);
         text-decoration: none;
+        @media screen and (max-width: 450px) {
+                font-size: 30px;
+            }
 }
 
 .mobile-menu-contact__link {
@@ -101,12 +105,16 @@ fill: currentColor;
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
         text-decoration: none;
+
         
 }
 
 .mobile-menu-social {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 15px;
+
+    
 }
 .mobile-menu-social__link {
         display: flex;
