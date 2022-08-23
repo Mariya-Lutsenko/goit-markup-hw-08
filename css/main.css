@@ -115,18 +115,20 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   z-index: 100;
   background-color: var(--background-backdrop);
   opacity: 1;
-  visibility: visible;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+  padding: 15px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
 }
 
@@ -171,6 +173,40 @@ img {
 
 .modal-button-close__icon {
   fill: currentColor;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px 40px;
+  max-width: 100%;
+  width: 450px;
+  min-height: 609px;
+  background-color: var(--primary-white-color);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
+@media screen and (max-height: 450px) {
+  .modal {
+    margin-top: 90px;
+  }
+}
+@media screen and (max-height: 485px) {
+  .modal {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-height: 600px) {
+  .modal {
+    margin-top: 50px;
+  }
 }
 
 .modal-form {
@@ -679,7 +715,6 @@ img {
   }
 }
 .hero__title {
-  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
