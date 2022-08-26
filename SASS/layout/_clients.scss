@@ -10,7 +10,29 @@
          }
 }
 
-
+.clients-list__item {
+    @media screen and (max-width: 319px) {
+            width: 100%;
+            
+        }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+            max-width: calc((100% - 30px)/2);
+            width: 100%;
+            gap: 30px;
+        }
+    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            max-width: calc((100% - 60px)/3);
+                width: 100%;
+                gap: 30px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: calc((100% - 150px)/6);
+                width: 100%;
+                gap: 30px;
+        }
+}
 
 
 
@@ -25,14 +47,6 @@
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
 
-    @media screen and (max-width: 767px) {
-    width: 210px; }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 226px;
-    }
-    @media screen and (min-width: 1200px) {
-             width: 170px;
-         }
 
     &:hover,
     &:focus {
